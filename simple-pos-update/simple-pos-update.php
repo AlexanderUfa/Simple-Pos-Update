@@ -2,9 +2,6 @@
 
 /*
  * Plugin Name: Simple Pos Update
- * Author: Alexander Vinogradov
- * Author URI: https://www.vinogradov-ufa.ru
- * License: GPL v3
  */
 
 
@@ -18,13 +15,13 @@ final class SimplePosUpdate
      public function __construct() 
      {
          // создаем новую колонку
-         add_filter( 'manage_' . 'uslugi' . '_posts_columns', array( $this, 'add_views_column' ) , 4 );
+         add_filter( 'manage_' . 'post' . '_posts_columns', array( $this, 'add_views_column' ) , 4 );
          
          // заполняем колонку данными
-         add_action( 'manage_' . 'uslugi' . '_posts_custom_column', array( $this, 'fill_views_column' ), 5, 2 );
+         add_action( 'manage_' . 'post' . '_posts_custom_column', array( $this, 'fill_views_column' ), 5, 2 );
          
          // добавляем возможность сортировать колонку
-         add_filter( 'manage_' . 'edit-uslugi' . '_sortable_columns', array( $this, 'add_views_sortable_column' ));
+         add_filter( 'manage_' . 'edit-post' . '_sortable_columns', array( $this, 'add_views_sortable_column' ));
          
          //подключаем скрипты и стили
          add_action( 'admin_enqueue_scripts', array( $this , 'true_include_myscript') , 25 );
@@ -34,7 +31,7 @@ final class SimplePosUpdate
          
          //запрос на обновление позиции
          add_action( 'wp_ajax_posupdate', array( $this , 'vin_posupdate' ) );
-         add_action( 'wp_ajax_nopriv_posupdate', array( $this , 'vin_posupdate' ));
+         add_action( 'wp_ajax_nopriv_posupdate', array( $this , 'vin_posupdate' )  );
          
          
           
