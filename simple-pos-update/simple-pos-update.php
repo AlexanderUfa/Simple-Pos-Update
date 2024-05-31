@@ -2,6 +2,9 @@
 
 /*
  * Plugin Name: Simple Pos Update
+ * Author: Alexander Vinogradov
+ * Author URI: https://www.vinogradov-ufa.ru
+ * License: GPL v3
  */
 
 
