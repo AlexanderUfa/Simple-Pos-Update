@@ -41,7 +41,6 @@ final class SimplePosUpdate
      // создаем новую колонку
      public function add_views_column( $columns )
         {
-	$num = 2; // после какой по счету колонки вставлять новые
 
 	$new_columns = [
 		SimplePosUpdate::posFieldName  => 'Позиция',
