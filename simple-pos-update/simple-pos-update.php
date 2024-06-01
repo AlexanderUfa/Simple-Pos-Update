@@ -127,7 +127,7 @@ final class SimplePosUpdate
         
         
 
-        public function vin_posupdate() : never
+        public function vin_posupdate() 
         {
         $position = intval( $_POST['position'] );
         $postid =  intval( $_POST['postid'] );
@@ -141,13 +141,13 @@ final class SimplePosUpdate
 
          
          
-    public static function getUrlPath() : string
+    public static function getUrlPath() 
      {
          return plugins_url( basename( __FILE__ , '.php' ) );
      }
      
      
-     public static function getDirPath() : string
+     public static function getDirPath() 
      {
          return plugin_dir_path( __FILE__ );
      }
