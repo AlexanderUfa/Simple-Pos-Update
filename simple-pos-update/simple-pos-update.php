@@ -2,7 +2,7 @@
  
 /*
 Plugin Name: Plugin Name: Simple Pos Update
-Plugin URI: http://www.vinogradov-ufa.ru
+Plugin URI: https://www.vinogradov-ufa.ru
 License: GPL3
 
 */
