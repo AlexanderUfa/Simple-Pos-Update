@@ -20,6 +20,6 @@
 
 
 # Установка
-Скопировать папку simple-pos-update в директорию с плагинами WordPress как правило wp-content/plugins/.
+Скопировать папку simple-pos-update в директорию с плагинами WordPress как правило это wp-content/plugins/.
 
 Активировать плагин в админке в разделе плагины.
