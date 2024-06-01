@@ -25,3 +25,6 @@
 ![image](https://github.com/AlexanderUfa/Simple-Pos-Update/assets/75223388/29a398a8-b0a5-42e9-9c54-db88391ecf2c)
 
 Активировать плагин в админке в разделе плагины.
+
+# Системные требования
+Версия PHP 5.1 и выше
