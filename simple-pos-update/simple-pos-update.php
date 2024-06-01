@@ -5,6 +5,7 @@ Plugin Name: Simple Pos Update
 Description: Простой WordPress плагин для сортировки постов. Добавляет столбец "Позиция" с возможностью обновить позицию не выходя из списка постов.
 Author URI: https://www.vinogradov-ufa.ru
 Plugin URI: https://github.com/AlexanderUfa/Simple-Pos-Update.git
+Author: Vinogradov
 Requires PHP: 5.1
 License: GPL3
 
