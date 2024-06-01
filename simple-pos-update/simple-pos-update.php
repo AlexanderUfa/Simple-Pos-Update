@@ -3,6 +3,7 @@
 /*
 Plugin Name: Simple Pos Update
 Plugin URI: https://www.vinogradov-ufa.ru
+Requires PHP: 5.1
 License: GPL3
 
 */
@@ -68,6 +69,7 @@ final class SimplePosUpdate
         {
 	
 	$new_columns = array( SimplePosUpdate::posFieldName  => 'Позиция' );
+      
 	return $columns + $new_columns ;
         
         }
