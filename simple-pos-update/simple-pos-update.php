@@ -66,13 +66,10 @@ final class SimplePosUpdate
      // создаем новую колонку
      public function add_views_column( $columns )
         {
-	 
-
-	$new_columns = [
-		SimplePosUpdate::posFieldName  => 'Позиция',
-	];
-
-	return $columns + $new_columns  ;
+	
+	$new_columns = array( SimplePosUpdate::posFieldName  => 'Позиция' );
+	return $columns + $new_columns ;
+        
         }
  
         
