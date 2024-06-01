@@ -2,7 +2,8 @@
  
 /*
 Plugin Name: Simple Pos Update
-Plugin URI: https://www.vinogradov-ufa.ru
+Author URI: https://www.vinogradov-ufa.ru
+Plugin URI: https://github.com/AlexanderUfa/Simple-Pos-Update.git
 Requires PHP: 5.1
 License: GPL3
 
