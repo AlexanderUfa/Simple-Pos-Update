@@ -28,3 +28,6 @@
 
 # Системные требования
 Версия PHP 5.1 и выше
+
+# Об авторе
+[http://www.vinogradov-ufa.ru/](https://www.vinogradov-ufa.ru/sozdanie_saitov-vinogradov-alexander)
