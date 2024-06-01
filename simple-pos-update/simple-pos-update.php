@@ -1,9 +1,11 @@
 <?php
-
+ 
 /*
- * Plugin Name: Simple Pos Update
- */
+Plugin Name: Plugin Name: Simple Pos Update
+Plugin URI: http://www.vinogradov-ufa.ru
+License: GPL3
 
+*/
 
 final class SimplePosUpdate
 {
