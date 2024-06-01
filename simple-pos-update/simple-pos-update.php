@@ -1,7 +1,7 @@
 <?php
  
 /*
-Plugin Name: Plugin Name: Simple Pos Update
+Plugin Name: Simple Pos Update
 Plugin URI: https://www.vinogradov-ufa.ru
 License: GPL3
 
