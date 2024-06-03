@@ -20,12 +20,19 @@ final class SimplePosUpdate
      
      public function __construct() 
      {
-         /*добавляем колонки ко всем типам постов. get_current_screen() работает только после хука current_screen*/
-         add_action( 'current_screen', array( $this, 'add_columns' ) );
+          
+         /*запускаем плагин только в админке*/
+         if ( is_admin() ) 
+         {
+            /*добавляем колонки ко всем типам постов. get_current_screen() работает только после хука current_screen*/
+            add_action( 'current_screen', array( $this, 'add_columns' ) );
          
-         //запрос на обновление позиции
-         add_action( 'wp_ajax_posupdate', array( $this , 'vin_posupdate' ) );
-         add_action( 'wp_ajax_nopriv_posupdate', array( $this , 'vin_posupdate' )  );
+            //запрос на обновление позиции
+            add_action( 'wp_ajax_posupdate', array( $this , 'vin_posupdate' ) );
+            add_action( 'wp_ajax_nopriv_posupdate', array( $this , 'vin_posupdate' )  );
+             
+         }
+
          
      }
      
@@ -84,12 +91,9 @@ final class SimplePosUpdate
 	if( $colname === SimplePosUpdate::posFieldName )
         { 
                 $pos = get_post_meta( $post_id, SimplePosUpdate::posFieldName , true );
-                /*if ( $pos!='' ) 
-                {*/
-                    //echo $pos;
-                    //echo '<span class='vpos_ajax' data-postid=' . $post_id . >' . $pos . '</span>';
-                     echo "<input type='text' class='vpos_ajax' name='position' data-postid=".$post_id." value='".$pos."' />";
-                /*}*/
+             
+                echo "<input type='text' class='vpos_ajax' name='position' data-postid=".$post_id." value='".$pos."' />";
+               
      
 	}
      }   
@@ -98,7 +102,7 @@ final class SimplePosUpdate
 
         // добавляем возможность сортировать колонку
         public function add_views_sortable_column($sortable_columns) {
-        $sortable_columns[SimplePosUpdate::posFieldName] = SimplePosUpdate::posFieldName;
+        $sortable_columns[ SimplePosUpdate::posFieldName ] = SimplePosUpdate::posFieldName;
         // false = asc (по умолчанию)
         // true  = desc
 
