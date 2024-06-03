@@ -14,7 +14,6 @@ License: GPL3
 final class SimplePosUpdate
 {
      /*имя столбца и произвольного поля поста по которому сортировка и вывод*/
-     /*нужно ставить default value = 0*/
      const posFieldName = 'pos';
     
      
