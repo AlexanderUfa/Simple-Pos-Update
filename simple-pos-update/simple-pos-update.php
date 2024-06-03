@@ -48,28 +48,22 @@ final class SimplePosUpdate
          if ( $base == 'edit' ) 
          {
               // создаем новую колонку
-             add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_views_column' ) , 4 );
+            add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_views_column' ) , 4 );
          
             // заполняем колонку данными
             add_action( 'manage_' . $post_type . '_posts_custom_column', array( $this, 'fill_views_column' ), 5, 2 );
          
             // добавляем возможность сортировать колонку
-             add_filter( 'manage_' . 'edit-'. $post_type . '_sortable_columns', array( $this, 'add_views_sortable_column' ));
+            add_filter( 'manage_' . 'edit-'. $post_type . '_sortable_columns', array( $this, 'add_views_sortable_column' ));
              
              //подключаем скрипты и стили
-             add_action( 'admin_enqueue_scripts', array( $this , 'true_include_myscript') , 25 );
+            add_action( 'admin_enqueue_scripts', array( $this , 'true_include_myscript') , 25 );
             // изменяем запрос при сортировке колонки
-             add_filter( 'request', array( $this , 'add_column_views_request' )   );
+            add_filter( 'request', array( $this , 'add_column_views_request' )   );
              
              
          }
-         
-         
-         
-        
-         
-         
-         
+ 
      }
      
      
@@ -102,9 +96,8 @@ final class SimplePosUpdate
 
         // добавляем возможность сортировать колонку
         public function add_views_sortable_column($sortable_columns) {
-        $sortable_columns[ SimplePosUpdate::posFieldName ] = SimplePosUpdate::posFieldName;
-        // false = asc (по умолчанию)
-        // true  = desc
+            
+            $sortable_columns[ SimplePosUpdate::posFieldName ] = SimplePosUpdate::posFieldName;
 
             return $sortable_columns;
          }
