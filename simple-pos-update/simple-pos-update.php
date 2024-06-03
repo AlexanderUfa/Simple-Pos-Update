@@ -43,7 +43,6 @@ final class SimplePosUpdate
          $post_type = $screen['post_type'];
          $base = $screen['base'];
          
-         //html::pre($screen);
 
          if ( $base == 'edit' ) 
          {
