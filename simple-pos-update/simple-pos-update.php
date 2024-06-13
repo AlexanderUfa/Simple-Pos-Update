@@ -11,7 +11,7 @@ License: GPL3
 
 */
 
-final class SimplePosUpdate
+class SimplePosUpdate
 {
      /* имя столбца и произвольного поля поста по которому сортировка и вывод */
      /* name of the column and custom field of the post by which sorting and output */
