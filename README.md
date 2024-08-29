@@ -30,4 +30,4 @@
 Версия PHP 5.1 и выше
 
 # Об авторе
-[http://www.vinogradov-ufa.ru/](https://www.vinogradov-ufa.ru/sozdanie_saitov-vinogradov-alexander)
+[https://vinogradov-alexander.com/](https://www.vinogradov-alexander.com/sozdanie_saitov-vinogradov-alexander)
