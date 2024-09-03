@@ -21,7 +21,6 @@
 
 #Установка 
 
-RU
 Скопировать папку simple-pos-update в директорию с плагинами WordPress как правило это wp-content/plugins/.
 
 ![image](https://github.com/AlexanderUfa/Simple-Pos-Update/assets/75223388/29a398a8-b0a5-42e9-9c54-db88391ecf2c)
