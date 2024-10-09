@@ -29,6 +29,3 @@ Activate the plugin in the admin panel in the plugins section.
 PHP version 5.1 and higher
 
 
-
-# About the author
-[https://vinogradov-alexander.com/](https://www.vinogradov-alexander.com/sozdanie_saitov-vinogradov-alexander)
